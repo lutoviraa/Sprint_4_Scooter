@@ -7,8 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobject.FaqData;
@@ -18,26 +16,27 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
-// Class of Test answers && questions
-    @RunWith(Parameterized.class)
-    public class CompareAnswersText {
-    //driver = new FireFoxDriver();
-    private WebDriver driver = new ChromeDriver();
+import static org.junit.Assert.assertEquals;
+
+        // Составили конструктор с вопросами,
+        @RunWith(Parameterized.class)
+    public class QuestionsTest {
+        private WebDriver driver;
         private static By question;
         private static By answer;
         private static String text;
 
-        // Составили конструктор с вопросами,
-        public CompareAnswersText(By question, By answer, String text) {
+        // Конструктор
+        public QuestionsTest(By question, By answer, String text) {
             this.question = question;
             this.answer = answer;
             this.text = text;
         }
+            //Параметры
+        @Parameterized.Parameters
 
-       @Parameterized.Parameters
-
-        public static Iterable<Object[]> data() {
-            List<Object[]> objects = Arrays.asList(new Object[][]{
+        public static Iterable<Object[]> data(){
+            return  Arrays.asList(new Object[][] {
                     {FaqData.question1, FaqData.answer1, FaqData.text1},
                     {FaqData.question2, FaqData.answer2, FaqData.text2},
                     {FaqData.question3, FaqData.answer3, FaqData.text3},
@@ -47,30 +46,26 @@ import java.util.List;
                     {FaqData.question7, FaqData.answer7, FaqData.text7},
                     {FaqData.question8, FaqData.answer8, FaqData.text8}
             });
-            return objects;
         }
         @Before
         public void setUp() {
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+            //driver = new FireFoxDriver();
+            driver = new ChromeDriver();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             MainPage mainPage = new MainPage(driver);
-            mainPage.clickCookieButton();
             mainPage.openWebSite();
             mainPage.scrollPageDown();
-
+            mainPage.clickCookieButton();
         }
-
-        // Прописан тест к вопросам
         @Test
-        public void compareTextAnswers() {
+        public void TextAnswers() {
             MainPage mainPage = new MainPage(driver);
             mainPage.clickByQuestion(question);
             mainPage.getText(answer);
             Assert.assertEquals(mainPage.getText(answer), text);
         }
-
-        @After
+       @After
         public void tearDown() {
             driver.quit();
         }
     }
-

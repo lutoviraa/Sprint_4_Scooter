@@ -1,11 +1,20 @@
-package Tests;
+package pageobject;
 
 import org.openqa.selenium.By;
 
-// Class of Test Data for Questions and Answers
+// Вопросы
     public class FaqData {
+    // Ответы на вопросы
+    public static final String text1 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
+    public static final String text2 = "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
+    public static final String text3 = "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.";
+    public static final String text4 = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
+    public static final String text5 = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
+    public static final String text6 = "Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
+    public static final String text7 = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
+    public static final String text8 = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
 
-        // Questions && Answers Locators
+        // Локаторы по полям вопросов
         public static By question1 = By.id("accordion__heading-0");
         public static By answer1 = By.id("accordion__panel-0");
         public static By question2 = By.id("accordion__heading-1");
@@ -23,13 +32,5 @@ import org.openqa.selenium.By;
         public static By question8 = By.id("accordion__heading-7");
         public static By answer8 = By.id("accordion__panel-7");
 
-        // Text of Answers
-        public static final String text1 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
-        public static final String text2 = "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
-        public static final String text3 = "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня. Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру. Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.";
-        public static final String text4 = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
-        public static final String text5 = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
-        public static final String text6 = "Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
-        public static final String text7 = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
-        public static final String text8 = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
+
 }

@@ -14,9 +14,9 @@ import pageobject.RentPage;
 
 import java.time.Duration;
 import java.util.Arrays;
-// Class Make Order Page
+
     @RunWith(Parameterized.class)
-    public class MakeOrderTest {
+    public class OrderTest {
 
         private WebDriver driver;
         private final String firstName;
@@ -27,8 +27,8 @@ import java.util.Arrays;
         private final String anyDay;
         private final String comment;
 
-        //Constructor
-        public MakeOrderTest(String firstName, String lastName, String address, String metroStation, String phoneNumber, String anyDay, String comment) {
+        //Создали конструктор
+        public OrderTest(String firstName, String lastName, String address, String metroStation, String phoneNumber, String anyDay, String comment) {
             this.firstName = firstName;
             this.lastName = lastName;
             this.address = address;
@@ -50,32 +50,30 @@ import java.util.Arrays;
             });
         }
 
-        // Annotation Before
         @Before
         public void setUp() {
             //driver = new FireFoxDriver();
             driver = new ChromeDriver();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             MainPage mainPage = new MainPage(driver);
             mainPage.openWebSite();
             mainPage.clickCookieButton();
         }
 
-        // Annotation test for Top Order Button
+        // Тест для создания заказа по верхней кнопке
         @Test
         public void orderSamokatFromTopOrderButton() {
-            // Test Data for Order Page
             MainPage mainPage = new MainPage(driver);
             mainPage.clickTopOrderButton();
             OrderPage orderPage = new OrderPage(driver);
             orderPage.setPersonality(firstName, lastName, address, metroStation, phoneNumber);
-            // Test Data for Rent Page
+            //Test Data for Rent Page
             RentPage rentPage = new RentPage(driver);
             rentPage.setOrder(anyDay, comment);
             Assert.assertTrue(rentPage.checkComplitelyOrder());
         }
 
-        // Annotation test for Lower Order Button
+        // Тест для создания заказа по нижней кнопке
         @Test
         public void orderSamokatFromLowerOrderButton() {
             MainPage mainPage = new MainPage(driver);
@@ -88,9 +86,7 @@ import java.util.Arrays;
             rentPage.setOrder(anyDay, comment);
             Assert.assertTrue(rentPage.checkComplitelyOrder());
         }
-
-        // Annotation After
-        @After
+       @After
         public void tearDown() {
             driver.quit();
         }
