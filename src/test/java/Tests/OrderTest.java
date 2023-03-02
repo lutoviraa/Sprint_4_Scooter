@@ -60,7 +60,7 @@ import java.util.Arrays;
             mainPage.clickCookieButton();
         }
 
-        // Тест для создания заказа по верхней кнопке
+        // Тест для создания заказа по верхней кнопке Button
         @Test
         public void orderSamokatFromTopOrderButton() {
             MainPage mainPage = new MainPage(driver);
@@ -73,7 +73,7 @@ import java.util.Arrays;
             Assert.assertTrue(rentPage.checkComplitelyOrder());
         }
 
-        // Тест для создания заказа по нижней кнопке
+        // Тест для создания заказа по нижней кнопке Button
         @Test
         public void orderSamokatFromLowerOrderButton() {
             MainPage mainPage = new MainPage(driver);
