@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pageobject.MainPage;
 import pageobject.OrderPage;
 import pageobject.RentPage;
-
 import java.time.Duration;
 import java.util.Arrays;
 
@@ -27,7 +26,7 @@ import java.util.Arrays;
         private final String anyDay;
         private final String comment;
 
-        //Создали конструктор
+        //Создали конструктор (заполнение формы заказа)
         public OrderTest(String firstName, String lastName, String address, String metroStation, String phoneNumber, String anyDay, String comment) {
             this.firstName = firstName;
             this.lastName = lastName;
@@ -38,8 +37,7 @@ import java.util.Arrays;
             this.comment = comment;
         }
 
-        // Parameterized Parameters
-        @Parameterized.Parameters
+       @Parameterized.Parameters
         public static Iterable<Object[]> data() {
             return Arrays.asList(new Object[][]{
                     {"Ольга", "Иванова", "ул Мира, 1",
