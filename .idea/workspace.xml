@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5bac054-4f2e-4eba-b2b7-eb6e17672cc9" name="Changes" comment=" new">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/RentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/RentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/OrderTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d5bac054-4f2e-4eba-b2b7-eb6e17672cc9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,14 +217,22 @@
       <option name="project" value="LOCAL" />
       <updated>1677745620228</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Задание оказалось сложнее, чем думала. В теории не было объяснений, как можно применить параметризацию в подобных случаях.">
+      <created>1677939817403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677939817403</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init: start prj-task" />
     <MESSAGE value="init: start prj" />
     <MESSAGE value=" new" />
-    <option name="LAST_COMMIT_MESSAGE" value=" new" />
+    <MESSAGE value="Задание оказалось сложнее, чем думала. В теории не было объяснений, как можно применить параметризацию в подобных случаях." />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание оказалось сложнее, чем думала. В теории не было объяснений, как можно применить параметризацию в подобных случаях." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
