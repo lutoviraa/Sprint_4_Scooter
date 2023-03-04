@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5bac054-4f2e-4eba-b2b7-eb6e17672cc9" name="Changes" comment="" />
+    <list default="true" id="d5bac054-4f2e-4eba-b2b7-eb6e17672cc9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/RentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/RentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/OrderTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,8 +149,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.OrderTest.orderScooFromOrderButton" />
-        <item itemvalue="JUnit.OrderTest.orderScooFromLowerOrderButton" />
         <item itemvalue="JUnit.OrderTest" />
+        <item itemvalue="JUnit.OrderTest.orderScooFromLowerOrderButton" />
         <item itemvalue="JUnit.OrderTest.orderScooFromTopOrderButton" />
         <item itemvalue="JUnit.OrderTest.orderSamokatFromTopOrderButton" />
       </list>

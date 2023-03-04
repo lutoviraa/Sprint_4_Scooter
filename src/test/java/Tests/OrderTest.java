@@ -16,16 +16,14 @@ import pageobject.RentPage;
 import java.time.Duration;
 import java.util.Arrays;
 
-import static pageobject.MainPage.*;
-
 @RunWith(Parameterized.class)
     public class OrderTest {
     private static final By topOrderButton = By.xpath(".//button[@class='Button_Button__ra12g']");
     private static final By lowerOrderButton = By.xpath(".//button[contains(@class, 'Button_Middle__1CSJM')]");
 
-    private final By orderButton;
     private WebDriver driver;
-        private final String firstName;
+    private final By orderButton;
+    private final String firstName;
         private final String lastName;
         private final String address;
         private final String metroStation;
@@ -44,8 +42,7 @@ import static pageobject.MainPage.*;
             this.anyDay = anyDay;
             this.comment = comment;
         }
-        //topOrderButton
-       @Parameterized.Parameters
+        @Parameterized.Parameters
         public static
        Iterable<Object[]> data() {
                       return Arrays.asList(new Object[][]{
@@ -71,29 +68,19 @@ import static pageobject.MainPage.*;
         @Test
         public void orderScooFromOrderButton() {
             RentPage rentalPage = new RentPage(driver);
-            RentPage.clickOrderButton();
+            rentalPage.clickOrderButton();
             OrderPage orderPage = new OrderPage(driver);
             orderPage.setPersonality(firstName, lastName, address, metroStation, phoneNumber);
             RentPage rentPage = new RentPage(driver);
             rentPage.setOrder(anyDay, comment);
             Assert.assertTrue(rentPage.checkComplitelyOrder());
-        }
+            }
 
-        // Тест для создания заказа по нижней кнопке Button
-       /* @Test
-        public void orderScooFromLowerOrderButton() {
-            MainPage mainPage = new MainPage(driver);
-            mainPage.clickLowerOrderButton();
-            // Test Data for Order Page
-            OrderPage orderPage = new OrderPage(driver);
-            orderPage.setPersonality(firstName, lastName, address, metroStation, phoneNumber);
-            // Test Data for Rent Page
-            RentPage rentPage = new RentPage(driver);
-            rentPage.setOrder(anyDay, comment);
-            Assert.assertTrue(rentPage.checkComplitelyOrder());
-        }*/
+
        @After
         public void tearDown() {
             driver.quit();
         }
+
+    
 }

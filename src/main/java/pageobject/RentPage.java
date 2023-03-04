@@ -15,13 +15,12 @@ public class RentPage {
     private final By commentField = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     private static final By orderButton = By.xpath(".//button[(@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать')]");
     private final By orderButtonPushYes = By.xpath(".//button[text()='Да']");
-    private final By successOfOrder = By.xpath("//*[@id=\"root\"]/div/div[2]/div[5]/div[1]");
+    private final By successOfOrder = By.xpath(".//button[(@class='Button_Button__ra12g Button_Middle__1CSJM and text()='Посмотреть статус')]");
 
     public RentPage(WebDriver driver) {
-        this.driver = driver;
+        RentPage.driver = driver;
     }
-    // Methods
-    public void inputDateOfRental(String anyDate) {
+       public void inputDateOfRental(String anyDate) {
         driver.findElement(dateOfRentalField).click();
         driver.findElement(dateOfRentalField).sendKeys(anyDate);
         driver.findElement(dateOfRentalField).click();
@@ -41,7 +40,7 @@ public class RentPage {
         driver.findElement(commentField).sendKeys(comment);
     }
 
-    public static void clickOrderButton() {
+    public void clickOrderButton() {
         driver.findElement(orderButton).click();}
 
     public void clickOrderButtonYes() {
@@ -52,8 +51,7 @@ public class RentPage {
         return driver.findElement(successOfOrder).isDisplayed();
     }
 
-    // Combine Methods && Create one of them
-    public void setOrder(String anyDate, String comment) {
+        public void setOrder(String anyDate, String comment) {
         inputDateOfRental(anyDate);
         inputRentalTime();
         choiceScooColor();
