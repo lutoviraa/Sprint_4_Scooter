@@ -63,24 +63,20 @@ import java.util.Arrays;
             mainPage.openWebSite();
             mainPage.clickCookieButton();
         }
-
         // Тест для создания заказа
         @Test
         public void orderScooFromOrderButton() {
             RentPage rentalPage = new RentPage(driver);
-            rentalPage.clickOrderButton();
+            rentalPage.clickOrderButton(orderButton);
             OrderPage orderPage = new OrderPage(driver);
             orderPage.setPersonality(firstName, lastName, address, metroStation, phoneNumber);
             RentPage rentPage = new RentPage(driver);
             rentPage.setOrder(anyDay, comment);
             Assert.assertTrue(rentPage.checkComplitelyOrder());
             }
-
-
        @After
         public void tearDown() {
             driver.quit();
         }
 
-    
-}
+   }

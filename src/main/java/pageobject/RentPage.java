@@ -40,8 +40,8 @@ public class RentPage {
         driver.findElement(commentField).sendKeys(comment);
     }
 
-    public void clickOrderButton() {
-        driver.findElement(orderButton).click();}
+    public void clickOrderButton(By orderButton) {
+        driver.findElement(RentPage.orderButton).click();}
 
     public void clickOrderButtonYes() {
         driver.findElement(orderButtonPushYes).click();
@@ -56,7 +56,7 @@ public class RentPage {
         inputRentalTime();
         choiceScooColor();
         sendComment(comment);
-        clickOrderButton();
+        clickOrderButton(orderButton);
         clickOrderButtonYes();
         checkComplitelyOrder();
     }
