@@ -11,14 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobject.FaqData;
 import pageobject.MainPage;
-
 import java.time.Duration;
 import java.util.Arrays;
-import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-
-        // Составили конструктор с вопросами,
         @RunWith(Parameterized.class)
     public class QuestionsTest {
         private WebDriver driver;
@@ -26,14 +21,13 @@ import static org.junit.Assert.assertEquals;
         private static By answer;
         private static String text;
 
-        // Конструктор
+        // Конструктор (проверка полей FAQ)
         public QuestionsTest(By question, By answer, String text) {
             this.question = question;
             this.answer = answer;
             this.text = text;
         }
-            //Параметры
-        @Parameterized.Parameters
+            @Parameterized.Parameters
 
         public static Iterable<Object[]> data(){
             return  Arrays.asList(new Object[][] {

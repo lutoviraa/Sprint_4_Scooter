@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5bac054-4f2e-4eba-b2b7-eb6e17672cc9" name="Changes" comment=" new">
+    <list default="true" id="d5bac054-4f2e-4eba-b2b7-eb6e17672cc9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/RentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/RentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,25 +48,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/irina.lutovinova/Sprint_4_Scooter",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/irina.lutovinova/Sprint_4_Scooter&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module",
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.QuestionsTest.TextAnswers">
+}</component>
+  <component name="RunManager" selected="JUnit.OrderTest.orderScooFromOrderButton">
+    <configuration name="OrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4_Scooter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.OrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderTest.orderSamokatFromTopOrderButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4_Scooter" />
       <extension name="coverage">
@@ -82,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.orderScooFromLowerOrderButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4_Scooter" />
       <extension name="coverage">
         <pattern>
@@ -91,29 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.QuestionsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuestionsTest.TextAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sprint_4_Scooter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.QuestionsTest" />
-      <option name="METHOD_NAME" value="TextAnswers" />
+      <option name="MAIN_CLASS_NAME" value="Tests.OrderTest" />
+      <option name="METHOD_NAME" value="orderScooFromLowerOrderButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionsTest.compareTextAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.orderScooFromOrderButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4_Scooter" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.QuestionsTest" />
-      <option name="METHOD_NAME" value="compareTextAnswers" />
+      <option name="MAIN_CLASS_NAME" value="Tests.OrderTest" />
+      <option name="METHOD_NAME" value="orderScooFromOrderButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionsText.compareTextAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.orderScooFromTopOrderButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4_Scooter" />
       <extension name="coverage">
         <pattern>
@@ -138,8 +139,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.QuestionsText" />
-      <option name="METHOD_NAME" value="compareTextAnswers" />
+      <option name="MAIN_CLASS_NAME" value="Tests.OrderTest" />
+      <option name="METHOD_NAME" value="orderScooFromTopOrderButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionsTest.TextAnswers" />
-        <item itemvalue="JUnit.QuestionsTest" />
-        <item itemvalue="JUnit.QuestionsTest.compareTextAnswers" />
+        <item itemvalue="JUnit.OrderTest.orderScooFromOrderButton" />
+        <item itemvalue="JUnit.OrderTest" />
+        <item itemvalue="JUnit.OrderTest.orderScooFromLowerOrderButton" />
+        <item itemvalue="JUnit.OrderTest.orderScooFromTopOrderButton" />
         <item itemvalue="JUnit.OrderTest.orderSamokatFromTopOrderButton" />
-        <item itemvalue="JUnit.QuestionsText.compareTextAnswers" />
       </list>
     </recent_temporary>
   </component>
@@ -206,13 +207,44 @@
       <option name="project" value="LOCAL" />
       <updated>1677742265522</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" new">
+      <created>1677743069990</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677743069990</updated>
+    </task>
+    <task id="LOCAL-00008" summary=" new">
+      <created>1677745620228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677745620228</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Задание оказалось сложнее, чем думала. В теории не было объяснений, как можно применить параметризацию в подобных случаях.">
+      <created>1677939817403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677939817403</updated>
+    </task>
+    <task id="LOCAL-00010" summary="исправления">
+      <created>1677961796663</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677961796663</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init: start prj-task" />
     <MESSAGE value="init: start prj" />
-    <option name="LAST_COMMIT_MESSAGE" value="init: start prj" />
+    <MESSAGE value=" new" />
+    <MESSAGE value="Задание оказалось сложнее, чем думала. В теории не было объяснений, как можно применить параметризацию в подобных случаях." />
+    <MESSAGE value="исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправления" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
