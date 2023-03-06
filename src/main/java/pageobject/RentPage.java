@@ -41,7 +41,7 @@ public class RentPage {
     }
 
     public void clickOrderButton(By orderButton) {
-        driver.findElement(RentPage.orderButton).click();}
+        orderButton.findElement(driver).click();}
 
     public void clickOrderButtonYes() {
         driver.findElement(orderButtonPushYes).click();
